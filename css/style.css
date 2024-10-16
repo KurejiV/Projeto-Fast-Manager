@@ -17,10 +17,6 @@ html, body {
     height: 100vh;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
 
 .second-column {
     height: 100vh;
@@ -31,7 +27,7 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: #EEEEEE;
-
+    
     img {
         width: 400px;
     }
@@ -39,28 +35,54 @@ html, body {
 
 .first-column {
     flex-grow: 0.3;
-    padding: 30px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 72px;
+    
+    img {
+        width: 200px;
+    }
+    
     h2 {
         font-size: 20px;
         font-weight: bold;
         text-align: left;
         padding-top: 54px;
         padding-bottom: 16px;
+        width: 100%;
+        align-self: self-start; 
     }
-    img {
-        width: 200px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        a {
+            font-size: 14px;
+            text-align: right;
+            padding-bottom: 60px;
+            color: #5600BE;
+        }
+        label {
+            color: #565656;
+        }
+        input {
+            border: none;
+            border-radius: 8px;
+            background-color: #F1F3F6;
+
+            font-size: 16px;
+            padding: 16px;
+        }
     }
     .btn-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        
         gap: 8px;
 
         .divider {
@@ -91,6 +113,7 @@ html, body {
             border: none;
             background: transparent;
             padding: 13px 100px;
+            cursor: pointer;
     
             &.btn-primary {
                 background-color: #5600BE;
