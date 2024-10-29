@@ -14,8 +14,8 @@ body {
 }
 
 .container {
-    width: 90%; /* Alterado para ocupar 90% da largura da tela */
-    max-width: 1000px; /* Limite máximo para telas grandes */
+    width: 90%; 
+    max-width: 1000px; 
     display: flex;
     justify-content: center;
     background-color: #ffffff;
@@ -25,12 +25,12 @@ body {
 
 .form-container {
     padding: 40px;
-    width: 100%; /* Faz com que o formulário ocupe toda a largura do container */
-    max-width: 600px; /* Ajuste máximo para não ficar muito largo em telas maiores */
+    width: 100%; 
+    max-width: 600px; 
 }
 
 h1 {
-    font-size: 36px; /* Aumentando o tamanho do título */
+    font-size: 36px; 
     margin-bottom: 30px;
 }
 
