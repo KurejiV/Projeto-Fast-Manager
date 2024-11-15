@@ -36,7 +36,7 @@ nome.addEventListener("keyup", () => {
 });
 
 email.addEventListener("keyup", () => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex = /^[^\s@]+@fasthelp\.com\.br$/;
     if (!regex.test(email.value)) {
         email.setAttribute("style", "color: red; border-color: red");
         labelEmail.innerHTML = "Email *Formato Inválido";
