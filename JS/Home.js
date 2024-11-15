@@ -1,18 +1,38 @@
-//Arquivo de teste, podem excluir ou modificá - lo
-
 let usarLogado = JSON.parse(localStorage.getItem('userLogado'))
 
 let logado = document.querySelector('#logado')
 
-logado.innerHTML = "Olá " + usarLogado.nome + "!"
+if (usarLogado) {
+    logado.innerHTML = "Olá " + usarLogado.nome + "!";
+} else {
+    logado.innerHTML = "Olá!";
+}
 
 if (localStorage.getItem('token') == null) {
     alert('Voce percisar estar logado para acessar essa pagina');
     window.location.href = "index.html";
 }
 
+function home() {
+    window.location.href = "Home.html";
+}
+
+function relatorios() {
+    window.location.href = "Relatorio.html";
+}
+
+function graficos() {}
+
+function notificacoes() {
+    window.location.href = "notificacoes.html";
+}
+
+function configuracoes() {}
+
+function ajuda() {}
+
 function sair() {
     localStorage.removeItem('token');
     localStorage.removeItem('userLogado');
-    window.location.href = "index.html";
+    window.location.href = "./html/index.html";
 }
