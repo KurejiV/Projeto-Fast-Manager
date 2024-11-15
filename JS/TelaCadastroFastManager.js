@@ -177,7 +177,7 @@ document.querySelectorAll('.input-container').forEach(container => {
 
     eyeOpenIcon.addEventListener('click', () => {
         input.setAttribute('type', 'password'); // Altera para senha
-        eyeOpenIcon.style.display = 'none'; // Esconde o olho aberto
+        eyeOpenIcon.style.display = 'none'; // olho aberto
         eyeCloseIcon.style.display = 'block'; // Mostra o olho fechado
     });
 });
