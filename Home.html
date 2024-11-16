@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -48,16 +50,22 @@
                     </select>
                 </div>
             </div>
-
-            <div class="large-box">Gráfico Grande</div>
+            
+            <div class="large-box"> 
+                <canvas id="graficoBarras"></canvas>
+                <canvas id="graficoBarras2"></canvas>
+            </div>
 
             <div class="main-content">
-                <div class="chart-box">Gráfico Linha</div>
-                <div class="info-box">Informações / Gráfico de Pizza</div>
+                <div class="chart-box">
+                    <canvas id="graficoLinhas"></canvas>
+                    <canvas id="graficoLinhas2"></canvas>
+                </div>
+                <div class="info-box"><canvas id="graficoPizza"></canvas></div>
             </div>
 
             <div class="bottom-grid">
-                <div class="small-box">Código de Barras</div>
+                <div class="small-box"><canvas id="codigoDeBarras"></canvas></div>
                 <div class="small-box">Outras Informações</div>
                 <div class="small-box">Mais Dados</div>
             </div>

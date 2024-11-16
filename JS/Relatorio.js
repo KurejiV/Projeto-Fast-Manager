@@ -21,7 +21,9 @@ function relatorios() {
     window.location.href = "Relatorio.html";
 }
 
-function graficos() {}
+function graficos() {
+    window.location.href = "Graficos.html";
+}
 
 function notificacoes() {
     window.location.href = "notificacoes.html";
