@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
     <title>Home</title>
 </head>
+
 <body>
     <div class="container">
         <aside class="sidebar">
-            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee" alt="Perfil">
+            <img src="https://i.redd.it/essa-foto-ia-que-t%C3%B4-usando-de-perfil-no-wpp-ficou-muito-v0-1m4zmh31i8yc1.jpg?width=3070&amp;format=pjpg&amp;auto=webp&amp;s=3dc837b42ea59d72f9616248f3f0cf0ccc9ae0ee"
+                alt="Perfil">
             <h2 id="logado"> </h2>
             <h3>Suporte ao cliente</h3>
             <button onclick="home()" style="background-color: #c75252;">Home</button>
@@ -25,6 +28,7 @@
 
         <main class="content">
             <div class="top-bar">
+                <div class="dropdowns">
                 <div class="dropdown">
                     Equipe
                     <select>
@@ -50,8 +54,13 @@
                     </select>
                 </div>
             </div>
-            
-            <div class="large-box"> 
+                <a href="https://www.fasthelp.com.br" target="_blank">
+                    <img src="https://www.helloethics.com/fasthelp/pt/image/logo.png" alt="" srcset="">
+                </a>
+
+            </div>
+
+            <div class="large-box">
                 <canvas id="graficoBarras"></canvas>
                 <canvas id="graficoBarras2"></canvas>
             </div>
@@ -66,11 +75,16 @@
 
             <div class="bottom-grid">
                 <div class="small-box"><canvas id="codigoDeBarras"></canvas></div>
-                <div class="small-box">Outras Informações</div>
+                <div class="small-box">
+                    <h4>Informações Gerais</h4>
+                    <p>Clientes Ativos: <strong>150</strong></p>
+                    <p>Vendas Totais: <strong>R$ 12.500</strong></p>
+                </div>
                 <div class="small-box">Mais Dados</div>
             </div>
         </main>
     </div>
     <script src="./JS/Home.js"></script>
 </body>
+
 </html>

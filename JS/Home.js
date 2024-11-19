@@ -52,7 +52,7 @@ const graficoPizza = new Chart(ctxPizza, {
         labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D'],
         datasets: [{
             label: 'Produtos',
-            data: [12, 19, 8, 5],   // Dados fictícios
+            data: [12, 19, 8, 5],   
             backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
             hoverOffset: 4
         }]
@@ -60,18 +60,8 @@ const graficoPizza = new Chart(ctxPizza, {
     options: {
         responsive: true,
         plugins: {
-            title: {
-                display: true, 
-                text: 'Distribuição dos Produtos',  
-                padding: {
-                    top: 20, 
-                    bottom: 10 
-                },
-                color: '#333',
-                align: 'center'  
-            },
             legend: {
-                position: 'left', 
+                position: 'right', 
                 labels: {
                     boxWidth: 20,  
                     padding: 10   
@@ -82,7 +72,8 @@ const graficoPizza = new Chart(ctxPizza, {
             }
         },
         layout: {
-            padding: 20  
+            padding: 20,
+            width: 100
         }
     }
 });
@@ -125,10 +116,12 @@ function graficos() {
 }
 
 function notificacoes() {
-    window.location.href = "notificacoes.html";
+    window.location.href = "Notificacoes.html";
 }
 
-function configuracoes() {}
+function configuracoes() {
+    window.location.href = "Configuracoes.html"
+}
 
 function ajuda() {}
 
