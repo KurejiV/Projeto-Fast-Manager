@@ -116,10 +116,12 @@ function graficos() {
 }
 
 function notificacoes() {
-    window.location.href = "notificacoes.html";
+    window.location.href = "Notificacoes.html";
 }
 
-function configuracoes() {}
+function configuracoes() {
+    window.location.href = "Configuracoes.html"
+}
 
 function ajuda() {}
 
