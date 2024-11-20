@@ -15,7 +15,7 @@
             <div id= "msgErro"></div>
             <div id= "msgSucesso"></div>
 
-            <form id = "form">
+            <form id = "form" method="POST" action="processarCadastro.php">
                 <label id="labelNome" for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
@@ -32,14 +32,14 @@
                     <i class="icon-eye-open"></i>
                 </div>
                 
-                <label id="labelConfirmar_senha" for="confirmar-senha">Confirmar Senha</label>
+                <label id="labelConfirmar_senha" for="confirmar_senha">Confirmar Senha</label>
                 <div class="input-container">
-                    <input type="password" id="confirmar_senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
                     <i class="icon-eye-close"></i>
                     <i class="icon-eye-open"></i>
                 </div>
 
-                <button onclick="cadastrar()" type="button">Cadastrar</button>
+                <button onclick="cadastrar()" type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
