@@ -1,4 +1,4 @@
-// Gráfico de Barras: Produtos Mais Vendidos
+// Gráfico 1
 new Chart(document.getElementById('graficoBarras'), {
     type: 'bar',
     data: {
@@ -6,26 +6,57 @@ new Chart(document.getElementById('graficoBarras'), {
         datasets: [{
             label: 'Quantidade',
             data: [150, 100, 80, 50],
-            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Vendas por Produto',
+                font: { size: 18 }
+            },
+            tooltip: {
+                enabled: true
+            }
+        },
+        scales: {
+            x: { grid: { display: false } },
+            y: { beginAtZero: true }
+        }
     }
 });
 
+// Gráfico 2
 new Chart(document.getElementById('graficoBarras2'), {
     type: 'bar',
     data: {
         labels: ['Produto A', 'Produto B', 'Produto C', 'Produto D'],
         datasets: [{
-            label: 'Quantidade',
+            label: 'Retorno',
             data: [50, 20, 70, 20],
-            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
         }]
     },
     options: {
-        responsive: true
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Retorno por Produto',
+                font: { size: 18 }
+            },
+            tooltip: {
+                enabled: true
+            }
+        },
+        scales: {
+            x: { grid: { display: false } },
+            y: { beginAtZero: true }
+        }
     }
 });
 
@@ -41,8 +72,46 @@ new Chart(document.getElementById('graficoLinhas'), {
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             fill: true
         }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Evolução das Vendas Mensais',
+                font: {
+                    size: 18
+                }
+            },
+            tooltip: {
+                enabled: true
+            }
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Meses',
+                    font: {
+                        size: 14
+                    }
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Valor (R$)',
+                    font: {
+                        size: 14
+                    }
+                }
+            }
+        }
     }
 });
+
 
 
 const ctxPizza = document.getElementById('graficoPizza').getContext('2d');
