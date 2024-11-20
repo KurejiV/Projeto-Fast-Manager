@@ -30,7 +30,7 @@ function notificacoes() {
 }
 
 function configuracoes() {
-    window.location.href = "Configuracoes.html";
+    window.location.href = "Configuracoes.html"
 }
 
 function ajuda() {
@@ -40,5 +40,5 @@ function ajuda() {
 function sair() {
     localStorage.removeItem('token');
     localStorage.removeItem('userLogado');
-    window.location.href = "index.html";
+    window.location.href = "./html/index.html";
 }

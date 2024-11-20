@@ -33,11 +33,7 @@ body {
     background-color: #ddd;
 }
 
-.sidebar button:hover {
-    background-color: #c75252;
-}
-
-.sidebar button {
+.sidebar-button {
     width: 100%;
     padding: 10px;
     background-color: #f76363;
@@ -48,8 +44,11 @@ body {
     color: #ffffff;
     font-size: 14px;
     transition: background-color 0.3s;
-    border: none; /* Remove a borda padrão do botão */
-    cursor: pointer; /* Adiciona cursor de ponteiro */
+    border: none;
+    cursor: pointer;
+}
+.sidebar-button:hover {
+    background-color: #c75252;
 }
 
 .content {
@@ -58,32 +57,37 @@ body {
     overflow-y: auto;
 }
 
-.section-title {
-    font-size: 25px;
-    margin-bottom: 10px;
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
     color: #333;
-    font-weight: bold;
 }
 
-.report-box {
-    background-color: #ddd;
-    padding: 20px;
+.faq-box, .placeholder-box {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    margin-bottom: 50px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.faq-box h2, .placeholder-box h2, .contact h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
 }
 
-table th, table td {
-    border: 1px solid #999;
-    padding: 8px;
-    text-align: center;
+.faq-box p, .placeholder-box p, .contact-info p {
+    font-size: 14px;
+    color: #666;
 }
 
-table th {
-    background-color: #f76363;
-    color: #fff;
+.contact-info {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
 }

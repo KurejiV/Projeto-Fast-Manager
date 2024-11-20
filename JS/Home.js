@@ -192,7 +192,9 @@ function configuracoes() {
     window.location.href = "Configuracoes.html"
 }
 
-function ajuda() {}
+function ajuda() {
+    window.location.href = "Ajuda.html"
+}
 
 function sair() {
     localStorage.removeItem('token');
