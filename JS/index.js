@@ -18,6 +18,10 @@ function gerarToken(tamanho = 16) {
   const array = new Uint8Array(tamanho);
   window.crypto.getRandomValues(array);
   return Array.from(array, byte => byte.toString(16).padStart(2, '0')).join('');
+};
+
+function Nova_senha() {
+  window.location.href = "Recuperacao_Senha.html";
 }
 
 function logar() {

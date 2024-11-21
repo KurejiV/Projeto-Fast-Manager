@@ -64,6 +64,7 @@ html, body {
             text-align: right;
             padding-bottom: 60px;
             color: #5600BE;
+            cursor: pointer;
         }
         label {
             color: #565656;
